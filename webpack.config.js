@@ -6,7 +6,13 @@ const config = {
     modules: ['node_modules'],
     extensions: ['.js', '.jsx'],
   },
-  entry: './index.js',
+  entry: {
+    bundle: [
+    './index.js',
+    './app/styles.scss',
+    ]
+  },
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './bundle.js'
@@ -18,7 +24,14 @@ const config = {
         use: ExtractTextPlugin.extract({
           fallback: { loader: 'style-loader' },
           use: [
-            { loader: 'css-loader' },
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                importLoaders: 1,
+                localIdentName: '[name]__[local]___[hash:base64:5]',
+              },
+            },
             { loader: 'postcss-loader' },
             { loader: 'sass-loader' }
           ],
