@@ -8,8 +8,10 @@ const config = {
   },
   entry: {
     bundle: [
-    './index.js',
-    './app/styles.scss',
+    './app/index.js',
+    './app/styles/bootstrap.min.css',
+    './app/styles/bootstrap-theme.min.css',
+    './app/styles/main.css',  
     ]
   },
   devtool: 'source-map',
@@ -38,8 +40,15 @@ const config = {
         }),
       },
       {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: { loader: 'style-loader'},
+          use: [{ loader: 'css-loader' }],
+        }),
+      },
+      {
         test: /\.jsx?$/,
-        include: path.join(__dirname, './src'),
+        include: path.join(__dirname, './app'),
         use: {
           loader: 'babel-loader',
         },

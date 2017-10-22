@@ -10,9 +10,4 @@
     "transform-decorators-legacy",
     "transform-es2015-destructuring"
   ],
-  "env": {
-    "test": {
-      "plugins":[]
-    }
-  }
 }
