@@ -1,0 +1,33 @@
+{
+  "name": "almundo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Francisco Puyó",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage --config ./config/jest.config.json",
+    "test:watch": "jest --coverage --config ./config/jest.config.json --watch",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors --config ./webpack.config.js",
+    "start": "npm-run-all --parallel api front",
+    "api": "json-server --watch ./mock-api.json --port 3001",
+    "front": "webpack-dev-server --port 8000 --inline --hot --open --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.2.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "favicons-webpack-plugin": "^0.0.7",
+    "fc": "^1.5.2",
+    "jest": "^21.2.1",
+    "json-server": "^0.12.0",
+    "npm-run-all": "^4.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3",
+    "window": "^4.2.1"
+  }
+}
