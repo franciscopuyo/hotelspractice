@@ -1,0 +1,61 @@
+import React from 'react';
+import Glass from '../../../../assets/icons/filters/search.svg';
+import Star from '../../../../assets/icons/filters/star.svg';
+import Bathrobes from '../../../../assets/icons/amenities/bathrobes.svg';
+import Bathtub from '../../../../assets/icons/amenities/bathtub.svg';
+import Beach from '../../../../assets/icons/amenities/beach.svg';
+import BeachPool from '../../../../assets/icons/amenities/beach-pool-facilities.svg';
+import BusinessCenter from '../../../../assets/icons/amenities/business-center.svg';
+import ChildrenClub from '../../../../assets/icons/amenities/children-club.svg';
+import CoffeeMaker from '../../../../assets/icons/amenities/coffe-maker.svg';
+import SpeakingBathtub from '../../../../assets/icons/amenities/deep-soaking-bathtub.svg';
+import fitnessCenter from '../../../../assets/icons/amenities/fitness-center.svg';
+import Garden from '../../../../assets/icons/amenities/garden.svg';
+import Kitchen from '../../../../assets/icons/amenities/kitchen-facilities.svg';
+import Newspaper from '../../../../assets/icons/amenities/newspaper.svg';
+import NightClub from '../../../../assets/icons/amenities/nightclub.svg';
+import Restaurant from '../../../../assets/icons/amenities/restaurant.svg';
+import SafetyBox from '../../../../assets/icons/amenities/safety-box.svg';
+import SeparateBedroom from '../../../../assets/icons/amenities/separate-bredroom.svg';
+import Sheets from '../../../../assets/icons/amenities/sheets.svg';
+
+const svgs = {
+  Glass,
+  Star,
+  Bathrobes,
+  Bathtub,
+  Beach,
+  BeachPool,
+  BusinessCenter,
+  ChildrenClub,
+  CoffeeMaker,
+  SpeakingBathtub,
+  fitnessCenter,
+  Garden,
+  Kitchen,
+  Newspaper,
+  NightClub,
+  Restaurant,
+  SafetyBox,
+  SeparateBedroom,
+  Sheets,
+};
+
+class Icon extends React.Component {
+  render = () => {
+    const SelectedSVG = svgs[this.props.icon];
+    return (
+      <SelectedSVG
+        fill={this.props.fill}
+        width={this.props.size}
+        {...this.props}
+      />
+    );
+  }
+}
+
+Icon.defaultProps = {
+  size: 18,
+  fill: '#157ab1',
+};
+export default Icon;

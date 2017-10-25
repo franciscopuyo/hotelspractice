@@ -7,8 +7,8 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { Router, Route, Redirect } from 'react-router';
 import { createBrowserHistory } from 'history';
 import store from './store';
-import App from './views/App';
-import Hotels from './views/Hotels';
+import App from 'views/App';
+import Hotels from 'views/Hotels';
 
 const history = syncHistoryWithStore(createBrowserHistory(), store);
 

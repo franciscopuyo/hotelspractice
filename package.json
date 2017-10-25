@@ -13,7 +13,6 @@
     "front": "webpack-dev-server --port 8000 --inline --hot --open --config ./webpack.config.js"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "history": "^4.7.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -47,6 +46,8 @@
     "react-css-modules": "^4.7.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
+    "svg-inline-loader": "^0.8.0",
+    "svg-react-loader": "^0.4.5",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3",
     "window": "^4.2.1"

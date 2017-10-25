@@ -1,0 +1,14 @@
+@import "../../styles/main";
+
+.container {
+  background: white;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+}
+
+.header {
+  border-bottom: 4px solid $lightgray;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: $darkgray;
+}
