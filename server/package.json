@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for almundo interview",
+  "main": "index.js",
+  "author": "Juan Francisco Puyó",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
