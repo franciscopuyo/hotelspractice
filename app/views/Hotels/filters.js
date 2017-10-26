@@ -1,4 +1,5 @@
 import SingleTextFilter from 'components/FilterPanel/Filters/SingleTextFilter';
+import StarFilter from 'components/FilterPanel/Filters/StarFilter';
 import { connect } from 'react-redux';
 
 const filters = [
@@ -9,6 +10,15 @@ const filters = [
       icon: 'Glass',
       name: 'Nombre del Hotel',
       placeholder: 'Ingrese el nombre del hotel que esta buscando',
+    },
+  },
+  {
+    key: 'star',
+    component: StarFilter,
+    props: {
+      icon: 'Star',
+      name: 'Estrellas',
+      quantity: 5,
     },
   },
 ];
