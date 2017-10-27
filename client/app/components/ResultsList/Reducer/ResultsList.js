@@ -8,7 +8,6 @@ const reducer = (state = {}, action) => {
       };
     }
     case 'REQUEST_RESULTS_SUCCESS': {
-      console.log(action);
       return {
         status: 'SUCCESS',
         payload: action.payload.data,
