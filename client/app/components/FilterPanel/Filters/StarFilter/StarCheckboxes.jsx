@@ -6,7 +6,11 @@ class StarCheckboxes extends React.Component {
   state = { value: null };
 
   isChecked = value => this.state.value == value;
-  onChange = ({ target }) => this.setState({ value: target.value });
+  onChange = ({ target }) => {
+    const value = target.value;
+    this.setState({ value });
+    this.props.onChange(value);
+  };
 
   getStars = () =>
     new Array(this.props.quantity).fill().map((item, index) => {
@@ -28,7 +32,7 @@ class StarCheckboxes extends React.Component {
   render = () => (
     <div>
       <div key="all">
-        <CheckboxItem checked={this.isChecked('all')} onChange={this.onChange} value="all" id="all">
+        <CheckboxItem checked={this.isChecked('')} onChange={this.onChange} value="" id="all">
           Todas las estrellas
         </CheckboxItem>
       </div>

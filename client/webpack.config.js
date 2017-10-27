@@ -1,5 +1,8 @@
+const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const isProd = process.env.NODE_ENV === 'production';
 
 const config = {
   resolve: {
@@ -75,9 +78,20 @@ const config = {
   plugins: [
     new ExtractTextPlugin({
       filename: 'styles.css',
-      disable: process.env.NODE_ENV !== 'production',
+      disable: !isProd,
     }),
   ],
 };
+
+if (isProd) {
+  config.plugins = config.plugins.concat([
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compressor: {
+        warnings: false,
+      },
+    }),
+  ]);
+}
 
 module.exports = config;

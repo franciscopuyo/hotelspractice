@@ -10,7 +10,7 @@ class Result extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.image}>
-          <img src={`assets/images/hotels/${this.props.image}`} />
+          <img src={this.props.image} />
         </div>
         <div className={styles.description}>
           <div className={styles.title}>{this.props.name}</div>
@@ -20,7 +20,7 @@ class Result extends React.Component {
           <div className={styles.amenities}>
             {this.props.amenities.map((item, index) => (
               <span key={index} className={styles.icon}>
-                <Icon icon="Restaurant" fill="black" />
+                <Icon icon={item} fill="black" />
               </span>
             ))}
           </div>

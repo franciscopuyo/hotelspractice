@@ -1,3 +1,5 @@
+import SingleTextFilterContainer from './SingleTextFilter.container';
 import SingleTextFilter from './SingleTextFilter.jsx';
 
-export default SingleTextFilter;
+export { SingleTextFilter };
+export default SingleTextFilterContainer;

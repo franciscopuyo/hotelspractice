@@ -14,7 +14,7 @@ class FilterWrapper extends React.Component {
         <div className={styles.icon}>
           <Icon icon={this.props.icon} />
         </div>
-        <div className={styles.name}>{this.props.name}</div>
+        <div className={styles.titleText}>{this.props.title}</div>
         <div onClick={this.toggleContent} className={styles.toggleButton}>
           <ToggleArrow opened={this.state.showContent} />
         </div>

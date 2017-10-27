@@ -6,7 +6,7 @@ $price-border: 1px dashed $darkgray;
   display: flex;
   background: white;
   padding: 10px;
-  max-height: 220px;
+  height: 220px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -71,7 +71,7 @@ $price-border: 1px dashed $darkgray;
 @media only screen and (max-width: 991px) {
   .container {
     flex-direction: column;
-    max-height: none;
+    height: auto;
     margin: 10px 0;
   }
 
@@ -85,7 +85,7 @@ $price-border: 1px dashed $darkgray;
   }
 
   .image {
-    max-height: 250px;
+    height: 250px;
   }
 
   .price {

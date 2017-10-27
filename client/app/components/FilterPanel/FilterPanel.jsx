@@ -8,7 +8,7 @@ class FilterPanel extends React.Component {
         Filtros
       </div>
       <div className={styles.filtersContainer}>
-        {this.props.filters.map((Filter, key) => <Filter key={key} />)}
+        {this.props.filters}
       </div>
     </div>
   );

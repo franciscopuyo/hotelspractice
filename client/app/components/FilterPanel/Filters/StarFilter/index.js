@@ -1,3 +1,5 @@
+import StarFilterContainer from './StarFilter.container';
 import StarFilter from './StarFilter.jsx';
 
-export default StarFilter;
+export { StarFilter };
+export default StarFilterContainer;

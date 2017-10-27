@@ -15,21 +15,17 @@ class ResultsList extends React.Component {
           price={result.price}
         />
       ))}
+      {this.props.status === 'LOADING' && 'Buscando resultados...'}
+      {this.props.status === 'ERROR' && 'Hubo un problema! Intentá mas tarde'}
+      {!this.props.results.length &&
+        this.props.status === 'SUCCESS' &&
+        'No encontramos ningun resultado! Seguí buscando'}
     </div>
   );
 }
 
 ResultsList.defaultProps = {
-  results: [
-    {
-      id: '249942',
-      name: 'Hotel Stefanos',
-      stars: 3,
-      price: 994.18,
-      image: '4900059_30_b.jpg',
-      amenities: ['safety-box', 'nightclub', 'deep-soaking-bathtub', 'beach', 'business-center'],
-    },
-  ],
+  results: [],
 };
 
 export default ResultsList;

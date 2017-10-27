@@ -1,7 +1,7 @@
 import React from 'react';
 import FilterPanel from 'components/FilterPanel';
 import ResultsList from 'components/ResultsList';
-import filters from './filters';
+import filters from './Filters.jsx';
 
 class Hotels extends React.Component {
   render = () => (
