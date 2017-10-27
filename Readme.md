@@ -24,4 +24,4 @@
 - Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants)
 - Is sagas really required? For the moment no, perhaps in a bigger app
 - Handle error response with axios (it needs a middleware to handle some error codes).
-- *Add react proptypes and default props* (I coded fast and I leave them to the end)
+- **Add react proptypes and default props** (I coded fast and I leave them to the end)
