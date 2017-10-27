@@ -6,6 +6,19 @@
   "author": "Juan Francisco Puyó",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "build": "babel server.js -d build",
+    "start": "BABEL_DISABLE_CACHE=1 nodemon --exec babel-node server.js"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.12.1"
   }
 }
