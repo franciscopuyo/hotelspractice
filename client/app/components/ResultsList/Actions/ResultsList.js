@@ -7,7 +7,7 @@ const cleanFilters = filters =>
       {
         ...cleantFilters,
         [key]: value,
-      } : cleanFilters;
+      } : cleantFilters;
   }, {});
 const requestAction = {
   type: 'REQUEST_RESULTS',

@@ -23,11 +23,12 @@ I recommend using [yarn](https://yarnpkg.com/) as package manager
 ### What's left
 - Add unit tests
 - Add eslint tool (DONE)
-- Add mock api for dev enviroment in case the server is down
-- Add configuration urls handling for more enviroments
+- Add mock api for dev enviroment in case the server is down (DONE)
+- Add configuration urls handling for more enviroments (DONE)
 - Server side rendering to improve results rendering (it has a good performance anyway) (Wont do)
 - Clean unneded dependencies from package.json (DONE)
-- Test on IE and Firefox
+- Test on IE
+- Test on Firefox
 - Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants)
 - Is sagas really required? For the moment no, perhaps in a bigger app (DONE at least using thunk)
 - Handle error response with axios (it needs a middleware to handle some error codes).
