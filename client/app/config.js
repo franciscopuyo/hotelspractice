@@ -12,7 +12,7 @@ const config = {
   },
   production: {
     url: {
-      hotels: '',
+      hotels: 'http://localhost:3000/api/hotels',
     },
   },
 };
