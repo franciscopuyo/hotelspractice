@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LOADING, SUCCESS, ERROR } from 'constants/statuses';
 import Result from './Result';
 import styles from './styles.scss';
 
@@ -20,9 +21,9 @@ class ResultsList extends React.Component {
   };
 
   render = () => {
-    if (this.props.status === 'LOADING') return 'Buscando resultados...';
-    if (this.props.status === 'ERROR') return 'Hubo un problema! Intentá mas tarde';
-    if (this.props.status === 'SUCCESS' && !this.props.results.length) return 'No hay resultados para tu búsqueda';
+    if (this.props.status === LOADING) return 'Buscando resultados...';
+    if (this.props.status === ERROR) return 'Hubo un problema! Intentá mas tarde';
+    if (this.props.status === SUCCESS && !this.props.results.length) return 'No hay resultados para tu búsqueda';
     if (this.props.status === '') return 'Realiza una búsqueda utilizando los filtros';
     return (
       <div className={styles.container}>

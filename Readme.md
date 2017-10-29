@@ -27,9 +27,9 @@ I recommend using [yarn](https://yarnpkg.com/) as package manager
 - Add configuration urls handling for more enviroments (DONE)
 - Server side rendering to improve results rendering (it has a good performance anyway) (Wont do)
 - Clean unneded dependencies from package.json (DONE)
-- Test on IE
-- Test on Firefox
-- Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants)
-- Is sagas really required? For the moment no, perhaps in a bigger app (DONE at least using thunk)
+- Test on IE (Wont do, I need to install the VM :P)
+- Test on Firefox (DONE)
+- Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants) (DONE)
+- Is sagas really required? For the moment no, perhaps in a bigger app (DONE thunk is a better approach)
 - Handle error response with axios (it needs a middleware to handle some error codes).
 - **Add react proptypes and default props** (I coded fast and I leave them to the end) (DONE)

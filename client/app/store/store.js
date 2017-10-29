@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import thunkMiddleware from 'redux-thunk';
-import filtersReducer from 'components/FilterPanel/Reducer/FilterPanel';
-import resultsReducer from 'components/ResultsList/Reducer/ResultsList';
+import filtersReducer from 'components/FilterPanel/Reducer';
+import resultsReducer from 'components/ResultsList/Reducer';
 
 const store = createStore(
   combineReducers({

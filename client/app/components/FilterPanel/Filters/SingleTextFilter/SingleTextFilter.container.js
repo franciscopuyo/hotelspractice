@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import actions from 'components/FilterPanel/Actions/FilterPanel';
+import actions from 'components/FilterPanel/Actions';
 import SingleTextFilter from './SingleTextFilter';
 
 const makeMapStateToProps = (firstState, ownProps) => state => ({

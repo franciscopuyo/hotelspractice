@@ -1,7 +1,8 @@
-import resultsListActions from 'components/ResultsList/Actions/ResultsList';
+import resultsListActions from 'components/ResultsList/Actions';
+import { SET_FILTER_VALUE } from 'constants/actions';
 
 const getSetFilterValueAction = (filterName, value) => ({
-  type: 'SET_FILTER_VALUE',
+  type: SET_FILTER_VALUE,
   filterName,
   value,
 });

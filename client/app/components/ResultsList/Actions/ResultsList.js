@@ -1,25 +1,30 @@
 import hotels from 'services/hotels';
+import { REQUEST_RESULTS, REQUEST_RESULTS_SUCCESS, REQUEST_RESULTS_ERROR } from 'constants/actions';
+import { LOADING, SUCCESS, ERROR } from 'constants/statuses';
 
 const cleanFilters = filters =>
   Object.keys(filters).reduce((cleantFilters, key) => {
     const value = filters[key];
-    return value !== '' ?
-      {
+    if (value !== '') {
+      return {
         ...cleantFilters,
         [key]: value,
-      } : cleantFilters;
+      };
+    }
+    return cleantFilters;
   }, {});
+
 const requestAction = {
-  type: 'REQUEST_RESULTS',
+  type: REQUEST_RESULTS,
 };
 
 const getRequestErrorAction = error => ({
-  type: 'REQUEST_RESULTS_ERROR',
+  type: REQUEST_RESULTS_ERROR,
   error,
 });
 
 const getRequestSuccessAction = payload => ({
-  type: 'REQUEST_RESULTS_SUCCESS',
+  type: REQUEST_RESULTS_SUCCESS,
   payload,
 });
 
