@@ -7,13 +7,20 @@ I recommend using [yarn](https://yarnpkg.com/) as package manager
 (you can use npm instead anyway. To the following doc use *npm run* instad of *yarn*)
 
 ### Client side
+Go to /client
+
 - To run the client
 ``` yarn start ```
 - To build the client to production
 ``` yarn build ```
+- To run the client with mocked backend
+```yarn start:mocked```
+
 - To run eslint to check code style
 ``` yarn lint ```
 ### Server side
+Go to /server
+
 - To run the server
 ``` yarn start ```
 - To build the server (it transpiled by babel)
