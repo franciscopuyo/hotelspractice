@@ -4,7 +4,7 @@ import StarCheckboxes from './StarCheckboxes.jsx';
 import styles from './styles.scss';
 
 class SingleTextFilter extends React.Component {
-  onChange = (value) => this.props.setFilterValue(this.props.name, value);
+  onChange = value => this.props.setFilterValue(this.props.name, value);
 
   render = () => (
     <FilterWrapper title={this.props.title} icon={this.props.icon}>

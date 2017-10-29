@@ -7,7 +7,7 @@ const getSetFilterValueAction = (filterName, value) => ({
 });
 
 const setFilterValue = (filterName, value) => (dispatch) => {
-  dispatch(getSetFilterValueAction(filterName, value))
+  dispatch(getSetFilterValueAction(filterName, value));
   dispatch(resultsListActions.getHotels());
 };
 

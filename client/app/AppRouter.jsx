@@ -4,11 +4,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { Router, Route, Redirect } from 'react-router';
+import { Router, Route } from 'react-router';
 import { createBrowserHistory } from 'history';
-import store from './store';
 import App from 'views/App';
 import Hotels from 'views/Hotels';
+import store from './store';
 
 const history = syncHistoryWithStore(createBrowserHistory(), store);
 

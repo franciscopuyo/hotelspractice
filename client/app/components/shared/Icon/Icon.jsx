@@ -31,14 +31,14 @@ const svgs = {
   'coffe-maker': CoffeeMaker,
   'deep-soaking-bathtub': SpeakingBathtub,
   'fitness-center': fitnessCenter,
-  'garden': Garden,
+  garden: Garden,
   'kitchen-facilities': Kitchen,
-  'newspaper': Newspaper,
-  'nightclub': NightClub,
-  'restaurant': Restaurant,
+  newspaper: Newspaper,
+  nightclub: NightClub,
+  restaurant: Restaurant,
   'safety-box': SafetyBox,
   'separate-bredroom': SeparateBedroom,
-  'sheets': Sheets,
+  sheets: Sheets,
 };
 
 class Icon extends React.Component {

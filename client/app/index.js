@@ -4,5 +4,5 @@ import AppRouter from './AppRouter.jsx';
 
 ReactDOM.render(
   <AppRouter />,
-  document.getElementById('App')
+  document.getElementById('App'),
 );
