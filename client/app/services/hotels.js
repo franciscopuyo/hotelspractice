@@ -1,10 +1,10 @@
 import axios from 'axios';
-import config from 'config';
+import { getUrl } from 'config';
 
 export default ({
   get: params => axios({
     method: 'get',
-    url: config.url.hotels,
+    url: getUrl('hotels'),
     params,
     responseType: 'json',
   }),

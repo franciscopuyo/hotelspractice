@@ -8,7 +8,7 @@ class FilterWrapper extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
-    children: PropTypes.arrayOf(PropTypes.node).isRequired,
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   };
 
   state = { showContent: true };

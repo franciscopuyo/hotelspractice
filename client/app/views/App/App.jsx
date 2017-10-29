@@ -4,7 +4,7 @@ import styles from './styles.scss';
 
 class App extends React.Component {
   static propTypes = {
-    children: PropTypes.arrayOf(PropTypes.node),
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   };
 
   static defaultProps = {

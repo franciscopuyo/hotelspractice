@@ -6,16 +6,21 @@ class CheckboxItem extends React.Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
-    checked: PropTypes.bool.isRequired,
+    checked: PropTypes.bool,
     name: PropTypes.string,
-    value: PropTypes.string,
-    children: PropTypes.arrayOf(PropTypes.node),
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.string,
+      PropTypes.object,
+    ]),
   };
 
   static defaultProps = {
     name: 'checkbox',
     value: 'on',
     children: [],
+    checked: false,
   };
 
   render = () => (

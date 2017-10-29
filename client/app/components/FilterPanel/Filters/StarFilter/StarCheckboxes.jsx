@@ -15,7 +15,8 @@ class StarCheckboxes extends React.Component {
 
   state = { value: null };
 
-  onChange = ({ target: { value } }) => {
+  onChange = ({ target }) => {
+    const { value } = target;
     this.setState({ value });
     this.props.onChange(value);
   };
@@ -38,7 +39,7 @@ class StarCheckboxes extends React.Component {
     });
 
   // eslint-disable-next-line eqeqeq
-  isChecked = value => this.state.value === value;
+  isChecked = value => this.state.value == value;
   render = () => (
     <div>
       <div key="all">

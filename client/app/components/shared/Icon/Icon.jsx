@@ -46,7 +46,7 @@ class Icon extends React.Component {
   static propTypes = {
     fill: PropTypes.string,
     size: PropTypes.number,
-    icon: PropTypes.string.oneOf(Object.keys(svgs)).isRequired,
+    icon: PropTypes.string.isRequired,
   };
 
   static defaultProps = {

@@ -2,7 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const isProd = process.env.NODE_ENV === 'production';
+const env = process.env.NODE_ENV || 'development';
+const isProd = env === 'production';
 
 const config = {
   resolve: {
@@ -80,6 +81,11 @@ const config = {
       filename: 'styles.css',
       disable: !isProd,
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify(env),
+      },
+    }),
   ],
 };
 
@@ -89,11 +95,6 @@ if (isProd) {
       minimize: true,
       compressor: {
         warnings: false,
-      },
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production'),
       },
     }),
   ]);

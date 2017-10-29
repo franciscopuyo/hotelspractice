@@ -4,10 +4,12 @@ import styles from './styles.scss';
 
 const Price = ({ amount, currency }) => (
   <div className={styles.container}>
-    {(amount > 0 && [
-      <div className={styles.currency}>{currency}</div>,
-      <div className={styles.amount}>{amount}</div>,
-    ]) ||
+    {(amount > 0 && (
+      <div className={styles.container}>
+        <div className={styles.currency}>{currency}</div>
+        <div className={styles.amount}>{amount}</div>
+      </div>
+    )) ||
       'Precio no especificado'}
   </div>
 );
