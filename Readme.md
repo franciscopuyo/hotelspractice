@@ -1,11 +1,16 @@
 # Al mundo practice
 
+Node version >= 6.0.0
+I recommend using [yarn](https://yarnpkg.com/) as package manager
+(you can use npm instead anyway. To the following doc use *npm run* instad of *yarn*)
+
 ### Client side
 - To run the client
 ``` yarn start ```
 - To build the client to production
 ``` yarn build ```
-
+- To run eslint to check code style
+``` yarn lint ```
 ### Server side
 - To run the server
 ``` yarn start ```
@@ -15,13 +20,13 @@
 
 ### What's left
 - Add unit tests
-- Add eslint tool
+- Add eslint tool (DONE)
 - Add mock api for dev enviroment in case the server is down
 - Add configuration urls handling for more enviroments
-- Server side rendering to improve results rendering (it has a good performance anyway)
-- Clean unneded dependencies from package.json
+- Server side rendering to improve results rendering (it has a good performance anyway) (Wont do)
+- Clean unneded dependencies from package.json (DONE)
 - Test on IE and Firefox
 - Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants)
-- Is sagas really required? For the moment no, perhaps in a bigger app
+- Is sagas really required? For the moment no, perhaps in a bigger app (DONE at least using thunk)
 - Handle error response with axios (it needs a middleware to handle some error codes).
-- **Add react proptypes and default props** (I coded fast and I leave them to the end)
+- **Add react proptypes and default props** (I coded fast and I leave them to the end) (DONE)
