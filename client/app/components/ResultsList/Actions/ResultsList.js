@@ -1,6 +1,5 @@
 import hotels from 'services/hotels';
 import { REQUEST_RESULTS, REQUEST_RESULTS_SUCCESS, REQUEST_RESULTS_ERROR } from 'constants/actions';
-import { LOADING, SUCCESS, ERROR } from 'constants/statuses';
 
 const cleanFilters = filters =>
   Object.keys(filters).reduce((cleantFilters, key) => {
