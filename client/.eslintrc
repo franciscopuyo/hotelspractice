@@ -16,7 +16,8 @@
   "rules": {
     "linebreak-style": "off",
     "react/require-extension": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
   },
   "env": {
     "browser": true,

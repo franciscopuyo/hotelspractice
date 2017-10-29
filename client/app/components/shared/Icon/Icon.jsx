@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Glass from '../../../../assets/icons/filters/search.svg';
 import Star from '../../../../assets/icons/filters/star.svg';
 import Bathrobes from '../../../../assets/icons/amenities/bathrobes.svg';
@@ -42,6 +43,17 @@ const svgs = {
 };
 
 class Icon extends React.Component {
+  static propTypes = {
+    fill: PropTypes.string,
+    size: PropTypes.number,
+    icon: PropTypes.string.oneOf(Object.keys(svgs)).isRequired,
+  };
+
+  static defaultProps = {
+    size: 18,
+    fill: '#157ab1',
+  };
+
   render = () => {
     const SelectedSVG = svgs[this.props.icon];
     return (
@@ -54,8 +66,4 @@ class Icon extends React.Component {
   }
 }
 
-Icon.defaultProps = {
-  size: 18,
-  fill: '#157ab1',
-};
 export default Icon;

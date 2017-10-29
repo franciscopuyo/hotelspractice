@@ -16,12 +16,7 @@ const filters = [
   {
     key: 'star',
     Component: StarFilter,
-    props: {
-      name: 'stars',
-      icon: 'Star',
-      title: 'Estrellas',
-      quantity: 5,
-    },
+    props: { name: 'stars' },
   },
 ];
 

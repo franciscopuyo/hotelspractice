@@ -1,3 +1,3 @@
-import ToggleArrow from './ToggleArrow.jsx';
+import ToggleArrow from './ToggleArrow';
 
 export default ToggleArrow;

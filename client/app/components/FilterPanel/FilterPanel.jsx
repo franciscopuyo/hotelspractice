@@ -4,7 +4,11 @@ import styles from './styles.scss';
 
 class FilterPanel extends React.Component {
   static propTypes = {
-    filters: PropTypes.array
+    filters: PropTypes.arrayOf(PropTypes.node),
+  };
+
+  static defaultProps = {
+    filters: [],
   };
 
   render = () => (

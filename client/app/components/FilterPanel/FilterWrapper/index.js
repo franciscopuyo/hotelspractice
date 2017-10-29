@@ -1,3 +1,3 @@
-import FilterWrapper from './FilterWrapper.jsx';
+import FilterWrapper from './FilterWrapper';
 
 export default FilterWrapper;

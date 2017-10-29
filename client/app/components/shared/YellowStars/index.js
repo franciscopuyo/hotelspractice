@@ -1,3 +1,3 @@
-import YellowStars from './YellowStars.jsx';
+import YellowStars from './YellowStars';
 
 export default YellowStars;

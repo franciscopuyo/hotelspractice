@@ -1,9 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FilterWrapper from '../../FilterWrapper';
-import StarCheckboxes from './StarCheckboxes.jsx';
+import StarCheckboxes from './StarCheckboxes';
 import styles from './styles.scss';
 
 class SingleTextFilter extends React.Component {
+  static propTypes = {
+    setFilterValue: PropTypes.func.isRequired,
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    icon: PropTypes.string,
+    quantity: PropTypes.number,
+  };
+
+  static defaultProps = {
+    quantity: 5,
+    icon: 'Star',
+    title: 'Estrellas',
+  };
+
   onChange = value => this.props.setFilterValue(this.props.name, value);
 
   render = () => (

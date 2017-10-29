@@ -1,5 +1,5 @@
 import SingleTextFilterContainer from './SingleTextFilter.container';
-import SingleTextFilter from './SingleTextFilter';
+import SingleTextFilterComponent from './SingleTextFilter';
 
-export { SingleTextFilter };
+export { SingleTextFilterComponent };
 export default SingleTextFilterContainer;

@@ -1,7 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.scss';
 
 class CheckboxItem extends React.Component {
+  static propTypes = {
+    id: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    checked: PropTypes.bool.isRequired,
+    name: PropTypes.string,
+    value: PropTypes.string,
+    children: PropTypes.arrayOf(PropTypes.node),
+  };
+
+  static defaultProps = {
+    name: 'checkbox',
+    value: 'on',
+    children: [],
+  };
+
   render = () => (
     <div className={styles.container}>
       <label htmlFor={this.props.id}>

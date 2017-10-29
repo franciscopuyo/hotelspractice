@@ -1,3 +1,3 @@
-import Hotels from './Hotels.jsx';
+import Hotels from './Hotels';
 
 export default Hotels;

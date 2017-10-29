@@ -1,5 +1,5 @@
 import ResultsListContainer from './ResultsList.container';
-import ResultsList from './ResultsList.jsx';
+import ResultsListComponent from './ResultsList';
 
-export { ResultsList };
+export { ResultsListComponent };
 export default ResultsListContainer;

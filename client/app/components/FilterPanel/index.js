@@ -1,3 +1,3 @@
-import FilterPanel from './FilterPanel.jsx';
+import FilterPanel from './FilterPanel';
 
 export default FilterPanel;
