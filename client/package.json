@@ -9,7 +9,8 @@
     "lint": "eslint --ext .js --ext .jsx ./app",
     "test:watch": "jest --coverage --config",
     "build": "cross-env NODE_ENV=production webpack --progress --colors --config ./webpack.config.js",
-    "start": "npm-run-all --parallel api front",
+    "start:mocked": "NODE_ENV=mocked npm-run-all --parallel api front",
+    "start": "yarn front",
     "api": "json-server --watch ./mock-api.json --port 3001",
     "front": "webpack-dev-server --port 8000 --inline --hot --open --config ./webpack.config.js"
   },
