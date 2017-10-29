@@ -31,5 +31,5 @@ I recommend using [yarn](https://yarnpkg.com/) as package manager
 - Test on Firefox (DONE)
 - Improve some code stuff (missing index.js files in reducers and actions, actions hardcoded and there are no constants) (DONE)
 - Is sagas really required? For the moment no, perhaps in a bigger app (DONE thunk is a better approach)
-- Handle error response with axios (it needs a middleware to handle some error codes).
+- Handle error response with axios (DONE)
 - **Add react proptypes and default props** (I coded fast and I leave them to the end) (DONE)
