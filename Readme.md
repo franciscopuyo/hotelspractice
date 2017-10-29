@@ -1,8 +1,10 @@
 # Al mundo practice
 
-⋅⋅⋅Node version >= 6.0.0
-⋅⋅⋅I recommend using [yarn](https://yarnpkg.com/) as package manager
-⋅⋅⋅(you can use npm instead anyway. To the following doc use *npm run* instad of *yarn*)
+Node version >= 6.0.0
+
+I recommend using [yarn](https://yarnpkg.com/) as package manager
+
+(you can use npm instead anyway. To the following doc use *npm run* instad of *yarn*)
 
 ### Client side
 - To run the client
